@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'
@@ -40,6 +41,9 @@ group :development, :test do
   gem 'byebug', '~> 9.0.5', platform: :mri
 
   gem 'rubocop', '~> 0.42.0'
+  gem 'rubocop-rspec', '~> 1.6.0'
+  gem 'rspec-rails', '~> 3.5.1'
+  gem 'factory_girl_rails', '~> 4.7.0'
   gem 'brakeman', '~> 3.3.3', require: false
 end
 
@@ -60,4 +64,9 @@ group :development do
   gem 'guard-haml_lint', '~> 0.1.4'
   gem 'guard-pow', '~> 2.0.0', require: false
   gem 'guard-rubocop', '~> 1.2.0'
+  gem 'guard-rspec', '~> 4.7.3'
+end
+
+group :test do
+  gem 'capybara', '~> 2.7.1'
 end

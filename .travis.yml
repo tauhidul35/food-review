@@ -5,8 +5,9 @@ before_script:
   - cp config/database.travis.yml config/database.yml
   - npm i -g coffeelint
 script:
-  - RAILS_ENV=test bundle exec rake db:migrate
-  - bundle exec rake db:test:prepare
+  - bundle exec rake db:setup RAILS_ENV=test
+  - bundle exec rspec -f p
   - bundle exec rubocop
-  - bundle exec haml-lint app
-  - bundle exec brakeman
+  - bundle exec haml-lint
+  - bundle exec coffeelint app
+  - bundle exec brakeman -z

@@ -1,0 +1,12 @@
+language: ruby
+env:
+  - DB=postgress
+before_script:
+  - cp config/database.travis.yml config/database.yml
+  - npm i -g coffeelint
+script:
+  - RAILS_ENV=test bundle exec rake db:migrate
+  - bundle exec rake db:test:prepare
+  - bundle exec rubocop
+  - bundle exec haml-lint app
+  - bundle exec brakeman

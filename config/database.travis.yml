@@ -1,0 +1,4 @@
+test:
+  adapter: posgress
+  database: ":memory:"
+  timeout: 500

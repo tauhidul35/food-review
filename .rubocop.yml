@@ -1,0 +1,25 @@
+# require: rubocop-rspec
+
+AllCops:
+  Exclude:
+    - "bin/*"
+    - "db/schema.rb"
+    - "vendor/bundle/**/*"
+
+Rails:
+  Enabled: true
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/AbcSize:
+  Max: 20
+
+MethodLength:
+  Max: 20

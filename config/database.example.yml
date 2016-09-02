@@ -8,3 +8,7 @@ default: &default
 development:
   <<: *default
   database: food-review-dev
+
+test:
+  <<: *default
+  database: food-review-test

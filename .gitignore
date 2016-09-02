@@ -24,6 +24,7 @@ tmp
 log
 
 config/database.yml
+config/application.yml
 .ruby-gemset
 
 .idea/

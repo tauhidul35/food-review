@@ -1,32 +1,26 @@
 source 'https://rubygems.org'
 ruby '2.3.1'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'
-# Use pg as the database for Active Record
 gem 'pg', '~> 0.18.4'
-# Use Puma as the app server
 gem 'puma', '~> 3.0'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
 
-# Use jquery as the JavaScript library
-gem 'jquery-rails', '~> 4.1.1'
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'figaro', '~> 1.1.1'
 gem 'jbuilder', '~> 2.5'
+gem 'turbolinks', '~> 5'
+gem 'uglifier', '>= 1.3.0'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'coffee-rails', '~> 4.2'
+gem 'jquery-rails', '~> 4.1.1'
 gem 'haml-rails', '~> 0.9.0'
+gem 'sass-rails', '~> 5.0'
+
 gem 'devise', '~> 4.2.0'
 gem 'omniauth', '~> 1.3.1'
 gem 'omniauth-facebook', '~> 4.0.0'
@@ -54,7 +48,7 @@ group :development do
   gem 'binding_of_caller', '~> 0.7.2'
   gem 'meta_request', '~> 0.4.0'
   gem 'listen', '~> 3.0.5'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  # Spring speeds up development by keeping your application running in the background.
   gem 'spring', '~> 1.7.2'
   gem 'spring-watcher-listen', '~> 2.0.0'
 
